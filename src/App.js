@@ -3,30 +3,73 @@ import React, { useRef } from "react";
 import "./styles.css";
 import { Controller, Scene } from "react-scrollmagic";
 import Sequence from "./Sequence";
+import Particle from "./paritcle/particle";
 
 const App = () => {
   const ref = useRef();
+
+ 
   return (
+    <>
     <div className="App">
       <Controller>
         <Scene duration="500%" triggerHook="onLeave"  pin>
           {progress => (
             <div style={{ height: "100vh", position: "relative" }}>
               <Sequence ref={ref} progress={progress} />
+              <Particle/>
             </div>
           )}
+                
+
         </Scene>
+
       </Controller>
-      <Controller>
-        <Scene duration="200%" triggerHook="onLeave" offset={200} pin>
-          {progress => (
-            <div style={{ height: "100vh", position: "relative" }}>
-              <Sequence ref={ref} progress={progress} />
-            </div>
-          )}
-        </Scene>
-      </Controller>
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggfgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggfgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggfgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggfggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggfggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggfggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggfggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+
+fgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggfggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggfggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+
+
     </div>
+
+
+   </>
   );
 };
 export default App;
