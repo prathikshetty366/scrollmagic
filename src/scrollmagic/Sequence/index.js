@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import { Skeleton } from "../Skeleton";
+import { Skeleton } from "../Skeleton/index";
 import ImageArray from "./ImageArray";
 
 const ImageSequence = forwardRef(({ progress }, ref) => {
@@ -21,7 +21,7 @@ const ImageSequence = forwardRef(({ progress }, ref) => {
             width: "100%",
             backgroundImage: `url('${item[0] ? item[0].src : null}')`,
             backgroundSize: "cover",
-            backgroundPosition: "center"
+            backgroundPosition: "center",
           }}
         />
       ));

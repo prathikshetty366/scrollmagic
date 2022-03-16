@@ -6,27 +6,22 @@ export const Skeleton = ({
   wrapper: Wrapper,
   height,
   circle,
-  margin
+  margin,
 }) => {
   const elements = [];
-
   for (let i = 0; i < count; i++) {
     let style = {
-      margin: margin
+      margin: margin,
     };
-
     if (width !== null) {
       style.width = width;
     }
-
     if (height !== null) {
       style.height = height;
     }
-
     if (width !== null && height !== null && circle) {
       style.borderRadius = "100%";
     }
-
     elements.push(
       <span key={i} className="skeleton" style={style}>
         &zwnj;
@@ -54,5 +49,5 @@ Skeleton.defaultProps = {
   wrapper: null,
   height: null,
   circle: false,
-  margin: 0
+  margin: 0,
 };

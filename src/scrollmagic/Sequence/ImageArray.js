@@ -1,5 +1,5 @@
 import { AirPods } from "../images";
-import { useImage } from "../hooks";
+import { useImage } from "../../hooks";
 
 const AirpodsArray = () => {
   const [AA0, AA0S] = useImage(AirPods[0]);
