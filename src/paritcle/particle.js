@@ -86,7 +86,7 @@ function particle() {
               number: {
                 density: {
                   enable: true,
-                  area: 500,
+                  area: 200,
                 },
                 value: 20,
               },
@@ -94,14 +94,15 @@ function particle() {
                 value: 0.2,
               },
               shape: {
-                type: "image",
-                image: {
-                  src: png,
-                },
+                type: "circle",
+                // type: "image",
+                // image: {
+                //   src: png,
+                // },
               },
               size: {
                 random: true,
-                value: 30,
+                value: 10,
               },
               style: {},
             },
