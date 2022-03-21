@@ -55,13 +55,14 @@ const App = () => {
         <div>
           {/* Rotation on hover on the div or any component */}
 
-          {/* <Rotation rotation={0.5} timing={200}> */}
-          {/* slides in from the left  */}
-          <div data-aos="slide-left">
-            {characters.map((character) => {
-              return <Card character={character} key={character.id} />;
-            })}
-          </div>
+          <Rotation rotation={0.5} timing={200}>
+            {/* slides in from the left  */}
+            <div data-aos="slide-left">
+              {characters.map((character) => {
+                return <Card character={character} key={character.id} />;
+              })}
+            </div>
+          </Rotation>
           <div data-aos="fade-up">
             {characters.map((character) => {
               return <Card character={character} key={character.id} />;
