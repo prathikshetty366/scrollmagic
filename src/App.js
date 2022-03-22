@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import Rotation from "./Components/RotationComponent/Rotation";
 import AnimatedCursor from "react-animated-cursor";
 import ScrollIndicator from "./Components/ScrollIndicator/ScrollIndicator";
+import Magneticbutton from "./Components/magneticButton/Magneticbutton";
 
 const App = () => {
   const characters = [
@@ -49,7 +50,7 @@ const App = () => {
               <div style={{ height: "100vh", position: "relative" }}>
                 <Sequence ref={ref} progress={progress} />
                 {/* this the js particle implementation  */}
-                <Particle />
+                {/* <Particle /> */}
               </div>
             )}
           </Scene>
@@ -77,6 +78,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <Magneticbutton />
     </>
   );
 };
