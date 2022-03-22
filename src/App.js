@@ -9,6 +9,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Rotation from "./Components/RotationComponent/Rotation";
 import AnimatedCursor from "react-animated-cursor";
+import ScrollIndicator from "./Components/ScrollIndicator/ScrollIndicator";
 
 const App = () => {
   const characters = [
@@ -41,6 +42,7 @@ const App = () => {
           innerScale={0.7}
           outerScale={5}
         />
+        <ScrollIndicator />
         <Controller>
           <Scene duration="500%" triggerHook="onLeave" pin>
             {(progress) => (
