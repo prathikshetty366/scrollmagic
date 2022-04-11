@@ -11,6 +11,7 @@ import Rotation from "./Components/RotationComponent/Rotation";
 import AnimatedCursor from "react-animated-cursor";
 import ScrollIndicator from "./Components/ScrollIndicator/ScrollIndicator";
 import Magneticbutton from "./Components/magneticButton/Magneticbutton";
+import Framermotion from "./Framer Motion/Framermotion";
 
 const App = () => {
   const characters = [
@@ -31,6 +32,7 @@ const App = () => {
     });
   }, []);
   const ref = useRef();
+
   return (
     <>
       <div className="App" styles={{ overflow: "hidden" }}>
@@ -77,8 +79,15 @@ const App = () => {
             })}
           </div>
         </div>
+        
       </div>
-      <Magneticbutton />
+    
+ 
+
+
+
+      {/* <Magneticbutton /> */}
+      <Framermotion/>
     </>
   );
 };
